@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إيهاب حسين - مطور فرونت إند</title>
+    <link rel="stylesheet" href="portfolio-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">إيهاب حسين</span>
+                <div class="logo-orbit"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">نبذة عني</a></li>
+                <li><a href="#skills" class="nav-link">المهارات</a></li>
+                <li><a href="#projects" class="nav-link">المشاريع</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span class="menu-line"></span>
+                
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+            <div class="mobile-menu-content">
+              
+                <nav class="mobile-nav">
+                    <a href="#home" class="mobile-nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>الرئيسية</span>
+                    </a>
+                    <a href="#about" class="mobile-nav-link">
+                        <i class="fas fa-user"></i>
+                        <span>نبذة عني</span>
+                    </a>
+                    <a href="#skills" class="mobile-nav-link">
+                        <i class="fas fa-code"></i>
+                        <span>المهارات</span>
+                    </a>
+                    <a href="#projects" class="mobile-nav-link">
+                        <i class="fas fa-briefcase"></i>
+                        <span>المشاريع</span>
+                    </a>
+                    <a href="#contact" class="mobile-nav-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>تواصل معي</span>
+                    </a>
+                </nav>
+               
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="floating-elements">
+            <div class="code-element element-1">&lt;/&gt;</div>
+            <div class="code-element element-2">{}</div>
+            <div class="code-element element-3">React</div>
+            <div class="code-element element-4">JS</div>
+            <div class="code-element element-5">CSS</div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="profile-image">
+                <img src="profile.gif" alt="إيهاب حسين - مطور فرونت إند" class="profile-img">
+                <div class="image-glow"></div>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">إيهاب حسين</span>
+                <span class="title-subtitle">مطور فرونت إند محترف</span>
+            </h1>
+            
+            <p class="hero-description">
+                أحول الأفكار إلى تجارب رقمية مذهلة باستخدام أحدث تقنيات الويب
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="cta-button primary" id="viewWorkBtn">
+                    <span class="button-text">🚀 استعرض أعمالي</span>
+                    <div class="button-glow"></div>
+                </button>
+                <button class="cta-button secondary" id="contactBtn">
+                    <span class="button-text">تواصل معي</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">نبذة عني</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        مرحباً! أنا إيهاب حسين، مطور فرونت إند شغوف بإنشاء تجارب مستخدم استثنائية. 
+                        أتخصص في تطوير واجهات المستخدم التفاعلية والمتجاوبة باستخدام أحدث التقنيات.
+                    </p>
+                    
+                    <div class="experience-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1+</div>
+                            <div class="stat-label">سنوات خبرة</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">مشروع مكتمل</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">رضا العملاء</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="code-animation">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span>
+                            <span class="code-variable">developer</span>
+                            <span class="code-operator">=</span>
+                            <span class="code-string">"إيهاب حسين"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-keyword">let</span>
+                            <span class="code-variable">skills</span>
+                            <span class="code-operator">=</span>
+                            <span class="code-array">["React", "Vue", "JavaScript"]</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-keyword">function</span>
+                            <span class="code-function">createAmazingUI</span>
+                            <span class="code-brackets">()</span>
+                            <span class="code-brackets">{</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-keyword">return</span>
+                            <span class="code-string">"تجربة مستخدم رائعة"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-brackets">}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">مهاراتي التقنية</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fab fa-js-square"></i>
+                        لغات البرمجة
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                           
+                           
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fab fa-react"></i>
+                        المكتبات والإطارات
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                          
+                        </div>
+                       
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        الأدوات والتقنيات
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Responsive Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">مشاريعي المميزة</h2>
+            <div class="projects-grid">
+                <!-- المشاريع ستضاف هنا لاحقاً -->
+                <div class="empty-projects">
+                    <div class="empty-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>المشاريع قيد التطوير</h3>
+                    <p>سيتم إضافة المشاريع المميزة قريباً...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">تواصل معي</h2>
+            <p class="contact-subtitle">هل لديك مشروع في ذهنك؟ دعنا نحوله إلى واقع!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>البريد الإلكتروني</h4>
+                            <span>devhobaa@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>رقم الهاتف</h4>
+                            <span>+20 1026897739</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>الموقع</h4>
+                            <span>الغربية، مصر</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/devhobaa" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ehab-hussein-5ba06934b/" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html>
